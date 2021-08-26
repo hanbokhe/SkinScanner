@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import { Text, View, StyleSheet, Alert, TouchableOpacity, Image } from 'react-native';
 import Camera from 'react-native-camera';
-import styled from 'styled-components';
 
-import Camera from 'react-native-camera';
 export default class BarcodeScan extends Component {
   constructor(props) {
     super(props);
@@ -31,8 +29,8 @@ export default class BarcodeScan extends Component {
       </Camera>
       <View style={styles.bottomOverlay}>
         <TouchableOpacity onPress={() => this.handleTourch(this.state.torchOn)}>
-        <Image style={styles.cameraIcon}
-        source={this.state.torchOn === true ? require('../../images/flasher_on.png') : require('../../images/flasher_off.png')} />
+        {/* <Image style={styles.cameraIcon}
+        source={this.state.torchOn === true ? require('../../images/flasher_on.png') : require('../../images/flasher_off.png')} /> */}
         </TouchableOpacity>
       </View>
     </View>
