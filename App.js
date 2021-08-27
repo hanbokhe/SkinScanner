@@ -10,23 +10,13 @@ const Stack = createNativeStackNavigator();
 
 export default App = () => {
   return (
-    <SafeAreaView>
-      <NavigationContainer>
+      <NavigationContainer >
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="SkinScanner" component={HomeScreen} />
           <Stack.Screen name="Details" component={Details} />
         </Stack.Navigator>
         <StatusBar style="auto" />
       </NavigationContainer>
-    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
